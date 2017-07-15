@@ -8,7 +8,7 @@
   Author URI: https://rtcamp.com
   Text Domain: nginx-helper
   Requires at least: 3.0
-  Tested up to: 4.8
+  Tested up to: 4.7.3
  */
 
 namespace rtCamp\WP\Nginx {
