@@ -22,6 +22,7 @@ before_script:
 - sudo ee -v
 - sudo lsb_release  -a
 - sudo ee site create wp.localtest.me --wpfc --user=ADMINUSER --email=prabuddha.chakraborty@rtcamp.com --pass=ADMINPASS
+- tail /var/log/ee/ee.log
 - sudo chmod 777 -R /var/www
 - sudo nginx -t
 - sudo service nginx reload
