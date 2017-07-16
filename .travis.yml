@@ -1,4 +1,5 @@
 sudo: required
+dist: precise
 
 language: node_js
 node_js:
@@ -21,8 +22,7 @@ before_script:
 - source /etc/bash_completion.d/ee_auto.rc
 - sudo ee -v
 - sudo lsb_release  -a
-- sudo ee site create wp.localtest.me --wpfc --user=ADMINUSER --email=prabuddha.chakraborty@rtcamp.com --pass=ADMINPASS
-- tail /var/log/ee/ee.log
+- sudo ee site create wp.localtest.me --wpfc --user=ADMINUSER --email=prabuddha.chakraborty@rtcamp.com --pass=ADMINPASS && sudo tail /var/log/ee/ee.log
 - sudo chmod 777 -R /var/www
 - sudo nginx -t
 - sudo service nginx reload
